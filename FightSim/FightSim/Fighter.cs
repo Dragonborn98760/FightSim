@@ -11,13 +11,16 @@ namespace FightSim
 
         private int hp;
 
+
         public string name;
 
         
 
-        public void Attack(int damage)
+        public int Attack()
         {
+            int damage = 5;
 
+            return damage;
         }
 
         public void Hurt(int amount)
