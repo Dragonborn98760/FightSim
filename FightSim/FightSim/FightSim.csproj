@@ -44,6 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fighter.cs" />
+    <Compile Include="Hero 1.cs" />
+    <Compile Include="hero 2.cs" />
+    <Compile Include="Hero 3.cs" />
+    <Compile Include="Hero 4.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

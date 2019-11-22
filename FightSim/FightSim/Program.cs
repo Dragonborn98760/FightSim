@@ -11,25 +11,25 @@ namespace FightSim
         static void Main(string[] args)
         {
 
-            string hero;
+            string heroChoice;
 
             Console.WriteLine("Choose your fighter:(1. 2. 3. 4.)");
 
-            hero = Console.ReadLine();
+            heroChoice = Console.ReadLine();
 
-            if (hero == "1")
+            if (heroChoice == "1")
             {
 
             }
-            else if (hero == "2")
+            else if (heroChoice == "2")
             {
 
             }
-            else if (hero == "3")
+            else if (heroChoice == "3")
             {
 
             }
-            else if (hero == "4")
+            else if (heroChoice == "4")
             {
 
             }

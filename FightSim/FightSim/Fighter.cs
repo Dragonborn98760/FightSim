@@ -9,33 +9,45 @@ namespace FightSim
     class Fighter
     {
 
-        private int hp;
+        protected int hp = 100;
 
+        protected int damage = 20;
 
         public string name;
 
         
 
-        public int Attack()
+        public int Attack(int damage)
         {
-            int damage = 5;
+            damage = this.damage;
 
-            return damage;
+            hp = hp - damage;
+
+            return hp;
         }
 
         public void Hurt(int amount)
         {
+            
+
+            hp = hp - amount;
+
 
         }
 
         public void IsAlive (bool IsAlive)
         {
-
+            if (hp > 0)
+            {
+                IsAlive = true;
+            }
         }
 
         public void GetHP (int hp)
         {
+            hp = this.hp;
 
+            Console.WriteLine(hp);
         }
 
     }
