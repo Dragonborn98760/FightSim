@@ -26,13 +26,13 @@ namespace FightSim
             return hp;
         }
 
-        public void Hurt(int amount)
+        public int Hurt(int amount)
         {
             
 
             hp = hp - amount;
 
-
+            return hp;
         }
 
         public void IsAlive (bool IsAlive)
@@ -48,6 +48,13 @@ namespace FightSim
             hp = this.hp;
 
             Console.WriteLine(hp);
+        }
+
+        public int Defence (int defence)
+        {
+            damage = damage - defence;
+
+            return damage;
         }
 
     }
