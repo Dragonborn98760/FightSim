@@ -43,6 +43,8 @@ namespace FightSim
             return IsAlive;
         }
 
+        
+
         public void GetHP (int hp)
         {
             hp = this.hp;

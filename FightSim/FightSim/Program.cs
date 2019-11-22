@@ -21,11 +21,15 @@ namespace FightSim
             //imput check for valid number
             while (!int.TryParse(Console.ReadLine(), out heroNumber))
             {
+                Console.WriteLine(heroNumber);
+                Console.ReadLine();
                 //if 1 choose hero 1
                 if (heroNumber == 1)
                 {
 
-                    Fighter Character = new Hero_1();
+                    Console.WriteLine("uwu");
+                    Console.ReadLine();
+                    Hero_1 Character = new Hero_1();
 
                     Enemy Enemy = new Enemy();
 
@@ -33,9 +37,9 @@ namespace FightSim
                     //name your character
                     Character.name = Console.ReadLine();
 
-                   
 
-                    while (heroNumber == 1)
+
+                    while (Character.hp > 0)
                     {
                         string actionChoice;
 
@@ -46,14 +50,33 @@ namespace FightSim
 
                         while (!int.TryParse(Console.ReadLine(), out action))
                         {
-                               Enemy.hp = Enemy.hp - Character.Attack;
+
+                            if (action == 1)
+                            {
+                                int damage = Character.Attack(Character.damage);
+
+
+                                Enemy.hp = Enemy.hp - damage;
+                            }
+                            else if (action == 2)
+                            {
+                                int damage = Character.Hurt(Character.damage);
+
+                                int defence = Character.Defence(Character.defence);
+
+                                Character.hp = Character.hp - (damage - defence);
+                            }
+                            else
+                            {
+                                Console.WriteLine("Please enter a valid number");
+                                Console.ReadLine();
+                            }
 
 
 
 
                         }
                     }
-
 
                 }
                 /*else if (heroChoice == "2")
@@ -72,13 +95,15 @@ namespace FightSim
                 {
 
                     Console.WriteLine("Enter a valid number:");
-
+                    
                 }
+                
             }
 
 
             
             
         }
+
     }
 }

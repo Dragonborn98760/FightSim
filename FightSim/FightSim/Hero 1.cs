@@ -13,6 +13,6 @@ namespace FightSim
 
          public new int damage = 25;
 
-
+         public new int defence = 5;
     }
 }
