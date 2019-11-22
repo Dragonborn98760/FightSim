@@ -10,21 +10,25 @@ namespace FightSim
     {
         static void Main(string[] args)
         {
-            
+            //variables
             string heroChoice;
 
             int heroNumber;
-
+            //fighter choice
             Console.WriteLine("Choose your fighter:(1)");
 
             heroChoice = Console.ReadLine();
-
+            //imput check for valid number
             while (!int.TryParse(Console.ReadLine(), out heroNumber))
             {
-
+                //if 1 choose hero 1
                 if (heroNumber == 1)
                 {
-                    Fighter hero = new Hero_1();
+                    Fighter Character = new Hero_1();
+                    //name your character
+                    Character.name = Console.ReadLine();
+
+                    
                 }
                 /*else if (heroChoice == "2")
                 {
@@ -40,10 +44,13 @@ namespace FightSim
                 }*/
                 else
                 {
+
                     Console.WriteLine("Enter a valid number:");
 
                 }
             }
+
+            
         }
     }
 }

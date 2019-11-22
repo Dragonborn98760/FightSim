@@ -9,6 +9,9 @@ namespace FightSim
     class Hero_1 : Fighter
     {
 
+        protected new int hp = 80;
+
+        protected new int damage = 25;
 
 
     }

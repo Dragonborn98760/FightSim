@@ -8,6 +8,13 @@ namespace FightSim
 {
     class Fighter
     {
+        new int min;
+
+        new int max;
+
+
+        Random generator = new Random();
+
 
         protected int hp = 100;
 

@@ -8,8 +8,12 @@ namespace FightSim
 {
     class Enemy : Fighter
     {
-        
-        
+
+        //enemy subclass 
+
+        protected new int hp = 200;
+
+        protected new int damage = 10;
 
         
 
