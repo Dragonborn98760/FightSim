@@ -8,13 +8,7 @@ namespace FightSim
 {
     class Fighter
     {
-        new int min;
-
-        new int max;
-
-
-        Random generator = new Random();
-
+        
 
         protected int hp = 100;
 
@@ -42,12 +36,11 @@ namespace FightSim
             return hp;
         }
 
-        public void IsAlive (bool IsAlive)
+        public static bool IsAlive (bool IsAlive)
         {
-            if (hp > 0)
-            {
-                IsAlive = true;
-            }
+            
+
+            return IsAlive;
         }
 
         public void GetHP (int hp)

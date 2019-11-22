@@ -11,9 +11,9 @@ namespace FightSim
 
         //enemy subclass 
 
-        protected new int hp = 200;
+         public new int hp = 200;
 
-        protected new int damage = 10;
+         public new int damage = 10;
 
         
 

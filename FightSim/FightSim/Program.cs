@@ -24,11 +24,37 @@ namespace FightSim
                 //if 1 choose hero 1
                 if (heroNumber == 1)
                 {
+
                     Fighter Character = new Hero_1();
+
+                    Enemy Enemy = new Enemy();
+
+
                     //name your character
                     Character.name = Console.ReadLine();
 
-                    
+                   
+
+                    while (heroNumber == 1)
+                    {
+                        string actionChoice;
+
+                        int action;
+
+                        Console.WriteLine("Choose your action: (1. Attack, 2.Defence)");
+                        actionChoice = Console.ReadLine();
+
+                        while (!int.TryParse(Console.ReadLine(), out action))
+                        {
+                               Enemy.hp = Enemy.hp - Character.Attack;
+
+
+
+
+                        }
+                    }
+
+
                 }
                 /*else if (heroChoice == "2")
                 {
@@ -50,6 +76,8 @@ namespace FightSim
                 }
             }
 
+
+            
             
         }
     }

@@ -8,10 +8,10 @@ namespace FightSim
 {
     class Hero_1 : Fighter
     {
+        //changing variables for heroes
+         public new int hp = 80;
 
-        protected new int hp = 80;
-
-        protected new int damage = 25;
+         public new int damage = 25;
 
 
     }
