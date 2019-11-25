@@ -45,11 +45,10 @@ namespace FightSim
 
         
 
-        public void GetHP (int hp)
+        public int GetHP ()
         {
-            hp = this.hp;
 
-            Console.WriteLine(hp);
+            return hp;
         }
 
         public int Defence (int defence)
